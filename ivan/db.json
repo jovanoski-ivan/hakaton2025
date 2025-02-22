@@ -1,0 +1,30 @@
+{
+    "users": [
+        {
+            "username": "John",
+            "email": "john@email.com",
+            "password": "password",
+            "followers": 0
+        },
+        {
+            "username": "Jane",
+            "email": "jane@email.com",
+            "password": "pass123",
+            "followers": 1
+        },
+        {
+            "username": "Joe",
+            "email": "joe@email.com",
+            "password": "joe",
+            "followers": 0
+        }
+    ],
+    "posts": [
+        {
+            "title": "Sample post title",
+            "description": "Some text",
+            "date": "22/02/2025",
+            "author": "Jane"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Srekja</title>
+    </head>
+    <body>
+        <a href="/"><h1>Srekja</h1></a>
+
+        {% if session['username'] %}
+        <h3>Hi {{ session['username'] }}</h3>
+        <form method="POST" action="/logout">
+            <button type="submit">Log Out</button>
+        </form>
+        <a href="/profile/{{ session['username']}}">My Profile</a>
+        {% else %}
+        <a href="/login">Log In</a><br>
+        <a href="/register">Register</a>
+        {% endif %}
+    </body>
+</html>
